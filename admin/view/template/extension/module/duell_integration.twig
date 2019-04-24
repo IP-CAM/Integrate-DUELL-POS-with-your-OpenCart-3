@@ -38,7 +38,7 @@
           <div class="form-group">
             <label class="col-sm-2 control-label" for="module_duell_integration_client_number"><span data-toggle="tooltip" title="{{ help_text_duell_integration_client_number }}">{{ text_duell_integration_client_number }}</span></label>
             <div class="col-sm-10">
-              <input type="number" name="module_duell_integration_client_number" value="{{ module_duell_integration_client_number }}" placeholder="{{ text_duell_integration_client_number }}" class="form-control" />
+              <input type="text" name="module_duell_integration_client_number" value="{{ module_duell_integration_client_number }}" placeholder="{{ text_duell_integration_client_number }}" class="form-control" />
               {% if error_module_duell_integration_client_number %}
                 <div class="text-danger">{{ error_module_duell_integration_client_number }}</div>
               {% endif %}
@@ -173,7 +173,7 @@
     font-size: 24px;
   }
 </style>
-    <script type="text/javascript"><!--
+<script type="text/javascript"><!--
 function blockUI(        )
   {
     $("#blocker").css('display', "");
@@ -188,7 +188,7 @@ function blockUI(        )
     if (inProcess == false) {
       inProcess = true;
       $.ajax({
-        url: 'index.php?route=extension/module/duell_integration/manualsync&user_token={{ user_token }}',
+            url: 'index.php?route=extension/module/duell_integration/manualsync&user_token={{ user_token }}',
         type: 'post',
         dataType: 'json',
         cache: false,
